@@ -2,28 +2,31 @@ import React from 'react'
 import teamImg from '../assets/team.jpeg'
 import teamsImg from '../assets/logo.jpeg'
 import { ReactTyped } from "react-typed";
-
+import bgImg from "../assets/team.jpeg"
 const HeroSection = () => {
   return (
-    <div className='bg-black text-white '>
-        <div className='max-w-[800px] h-screen mt-[-96px] w-full mx-auto text-center flex flex-col justify-center'>
-         
-            <h1 className='md:text-5xl sm:text-4xl text-3xl md:py-6'>Our community strives to</h1>
+    <div className=' relative bg-black  '>
+               
+        <div className=' h-screen mt-[-96px] w-full mx-auto text-center flex flex-col justify-center mb-8 '>
+        {/* <img className=' absolute justify-center max-w-[800px] mx-auto  pt-16 w-full h-full object-cover mix-blend-overlay opacity-[90%]  ' src={bgImg} alt=""  /> */}
+            <h1  data-aos="fade-up" data-aos-delay-100 className=' md:text-6xl font-semibold sm:text-4xl text-fuchsia-900 text-3xl md:py-6'>Our community strives to</h1>
             <ReactTyped strings={['alleviate poverty,', 'promote education', 'enhance health and well-being',]}
-                className='md:text-3xl sm:text-4xl text-xl md:pl-4 pl-2' 
+                className=' text-white fond-bold md:text-4xl sm:text-4xl text-xl md:pl-4 pl-2' 
                 typeSpeed={120}
                 backSpeed={140}
                 loop
                 />
-            <div className='flex flex-row'>
-                <p className='md:text-2xl sm:text-4xl text-xl items-center py-4 text-gray-500'>The organization also focuses on community development, fostering cultural awareness, and empowering individuals through volunteerism and capacity-building. Fundraising and resource mobilization are key to sustaining its programs and maximizing impact, ensuring that help reaches those in need.
+            <div className='grid mx-auto items-center grid-row md:w-[800px] '>
+         
+                <p data-aos="fade-up" data-aos-delay="300" className='md:text-2xl text-white sm:text-4xl text-xl items-center py-4 '>
+               One love Foundation is a charity organization deeply committed to promoting positive change through various community-driven initiatives. As an organization founded on the values of unity, love, and empowerment.
             
                 </p> 
             </div>
             <div className='flex itemsp-center'>
          
-            <h1 className='md:text-lg -auto'>Become a family  of one love foundation?</h1>
-            <button className='bg-gradient-to-r from-pink-500 to-violet-500 w-[200px] rounded-md my-6 mx-auto font-medium  py-3 text-white text-lg'>Register</button>
+           
+            <button data-aos="fade-up" data-aos-delay="700"  className='text-fuchsia-50 text-2xl   bg-fuchsia-900 w-[200px] rounded-md my-6 mx-auto font-medium  py-3  text-lg hover:scale-105 duration-300'>Learn More </button>
             </div>
             
 
